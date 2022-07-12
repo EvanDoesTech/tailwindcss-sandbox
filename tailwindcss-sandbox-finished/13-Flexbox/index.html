@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Flexbox</title>
+  </head>
+  <body>
+    <!-- Flexbox Utilities -->
+    <!-- Docs: https://tailwindcss.com/docs/flex -->
+    <!-- Direction: https://tailwindcss.com/docs/flex-direction -->
+    <div
+      class="flex flex-row-reverse h-96 bg-teal-200 items-center justify-around"
+    >
+      <div class="p-8 border border-teal-300 bg-teal-100">1</div>
+      <div class="p-8 border border-teal-300 bg-teal-100">2</div>
+      <div class="p-8 border border-teal-300 bg-teal-100">3</div>
+      <div class="p-8 border border-teal-300 bg-teal-100">4</div>
+      <div class="p-8 border border-teal-300 bg-teal-100">5</div>
+    </div>
+
+    <!-- Grow & Shrink -->
+    <div class="flex w-full h-96 bg-indigo-200">
+      <div class="w-32 p-8 border border-indigo-300 bg-indigo-100">1</div>
+      <div class="flex-none w-32 p-8 border border-indigo-300 bg-indigo-100">
+        2
+      </div>
+      <div class="flex-auto w-32 p-8 border border-indigo-300 bg-indigo-100">
+        3
+      </div>
+      <div class="flex-1 w-32 p-8 border border-indigo-300 bg-indigo-100">
+        4
+      </div>
+      <div class="w-32 p-8 border border-indigo-300 bg-indigo-100">5</div>
+      <div class="w-32 p-8 border border-indigo-300 bg-indigo-100">6</div>
+    </div>
+
+    <!-- 4 Even Column Example -->
+    <div class="flex w-full h-24 bg-sky-200">
+      <div class="flex-1 bg-sky-100 border border-sky-300">1</div>
+      <div class="flex-1 bg-sky-100 border border-sky-300">2</div>
+      <div class="flex-1 bg-sky-100 border border-sky-300">3</div>
+      <div class="flex-1 bg-sky-100 border border-sky-300">4</div>
+    </div>
+
+    <!-- One Static Column, 2 Growing Columns -->
+    <div class="flex w-full h-24 bg-sky-200">
+      <div class="w-64 bg-sky-100 border border-sky-300">1</div>
+      <div class="flex-1 w-64 bg-sky-100 border border-sky-300">2</div>
+      <div class="flex-1 w-64 bg-sky-100 border border-sky-300">3</div>
+    </div>
+  </body>
+</html>

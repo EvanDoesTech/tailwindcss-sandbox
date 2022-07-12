@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Config And Customize</title>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: "#c48aff",
+              secondary: "#8bd7f0",
+            },
+            fontSize: {
+              big: "100px",
+            },
+            spacing: {
+              109: "5rem",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body>
+    <!-- Customization -->
+    <!-- Docs: https://tailwindcss.com/docs/configuration -->
+
+    <!-- Custom Colors -->
+    <div class="text-2xl text-red-500">Hello World</div>
+    <div class="text-2xl text-primary">Hello World</div>
+    <div class="text-2xl text-secondary">Hello World</div>
+
+    <!-- Custom Font Sizes -->
+    <div class="text-big text-red-500">Hello World</div>
+
+    <!-- Custom Spacing -->
+    <div class="bg-red-100 p-109">Hello World</div>
+  </body>
+</html>

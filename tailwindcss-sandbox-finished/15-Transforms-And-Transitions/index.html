@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Transforms and Transitions</title>
+  </head>
+  <body class="flex flex-col space-y-24 m-8">
+    <!-- Without Transition Example-->
+    <button class="bg-indigo-500 text-white p-4 rounded-md hover:bg-teal-500">
+      Hello World
+    </button>
+
+    <!-- With Transition Example -->
+    <!-- Docs: https://tailwindcss.com/docs/transition-property -->
+    <button
+      class="bg-indigo-500 text-white p-4 rounded-md hover:bg-teal-500 transition-colors duration-1000"
+    >
+      Hello World
+    </button>
+
+    <!-- Transform -->
+    <!-- Rotate Docs: https://tailwindcss.com/docs/rotate -->
+    <!-- Translate Docs: https://tailwindcss.com/docs/translate -->
+    <button
+      class="bg-indigo-500 text-white p-4 rounded-md hover:bg-teal-500 hover:rotate-6 transition-transform"
+    >
+      Hello World
+    </button>
+  </body>
+</html>

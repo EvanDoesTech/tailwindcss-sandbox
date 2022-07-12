@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Pseudo Classes</title>
+  </head>
+  <body>
+    <div class="flex flex-col p-8 space-y-4">
+      <!-- Hover style -->
+      <!-- Docs: https://tailwindcss.com/docs/hover-focus-and-other-states -->
+      <button
+        class="bg-indigo-500 text-white py-2 px-3 rounded-md hover:bg-teal-500 hover:text-xl hover:border-4 hover:border-red-500"
+      >
+        Submit
+      </button>
+
+      <!-- Focus style -->
+      <input
+        type="text"
+        class="border-2 p-2 focus:outline-teal-500 focus:bg-teal-100 hover:bg-teal-50"
+      />
+
+      <!-- Active style -->
+      <button
+        class="bg-indigo-500 text-white py-2 px-3 rounded-md active:bg-amber-500"
+      >
+        Submit
+      </button>
+
+      <!-- Style based on parent -->
+      <a
+        href=""
+        class="group bg-white shadow-xl rounded-md p-4 hover:bg-teal-500"
+      >
+        <h2 class="group-hover:text-white">Hello</h2>
+        <p class="group-hover:text-teal-900">Welcome to the world.</p>
+      </a>
+
+      <!-- Style based on sibling -->
+      <button class="bg-indigo-500 text-white peer p-4 hover:bg-amber-500">
+        Reveal Text
+      </button>
+      <p class="hidden peer-hover:block">I am revealed!</p>
+
+      <!-- Cursor style -->
+      <div class="bg-white p-4 shadow-2xl rounded-md hover:cursor-pointer">
+        Click to toggle
+      </div>
+
+      <!-- Cursor type -->
+      <!-- Docs: https://tailwindcss.com/docs/cursor -->
+      <div class="bg-white p-4 shadow-2xl rounded-md hover:cursor-wait">
+        Click to toggle
+      </div>
+      <div class="bg-white p-4 shadow-2xl rounded-md hover:cursor-crosshair">
+        Click to toggle
+      </div>
+
+      <!-- Disable browser/OS specific styling -->
+      <!-- Docs: https://tailwindcss.com/docs/appearance -->
+      <select class="appearance-none" name="" id="">
+        <option value="a">A</option>
+        <option value="b">B</option>
+      </select>
+
+      <!-- Disable user selecting -->
+      <!-- Docs: https://tailwindcss.com/docs/user-select -->
+      <p class="select-none">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta
+        dignissimos impedit facere voluptas temporibus commodi alias cumque
+        minima, similique debitis.
+      </p>
+    </div>
+  </body>
+</html>

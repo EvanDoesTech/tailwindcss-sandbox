@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Backgrounds</title>
+  </head>
+  <body>
+    <!-- Background Utilties -->
+
+    <!-- Background Size-->
+    <!-- Size Docs: https://tailwindcss.com/docs/background-size -->
+    <div class="m-8 h-96 bg-teal-100 border border-teal-400">
+      <div class="w-full h-full bg-[url('../assets/img1.jpg')] bg-cover"></div>
+    </div>
+    <div class="m-8 h-96 bg-teal-100 border border-teal-400">
+      <div
+        class="w-full h-full bg-[url('../assets/img1.jpg')] bg-contain"
+      ></div>
+    </div>
+
+    <!-- Repeat Docs: https://tailwindcss.com/docs/background-repeat -->
+    <div class="m-8 h-96 bg-teal-100 border border-teal-400">
+      <div
+        class="w-full h-full bg-[url('../assets/img1.jpg')] bg-contain bg-no-repeat"
+      ></div>
+    </div>
+
+    <!-- Position Docs: https://tailwindcss.com/docs/background-position -->
+    <div class="m-8 h-96 bg-teal-100 border border-teal-400">
+      <div
+        class="w-full h-full bg-[url('../assets/img1.jpg')] bg-cover bg-center"
+      ></div>
+    </div>
+
+    <!-- Background gradients -->
+    <!-- Docs: https://tailwindcss.com/docs/background-image -->
+    <div class="m-8 h-32 bg-gradient-to-r from-teal-500 to-cyan-500"></div>
+    <div class="m-8 h-32 bg-gradient-to-l from-teal-500 to-cyan-500"></div>
+    <div class="m-8 h-32 bg-gradient-to-br from-teal-500 to-amber-500"></div>
+  </body>
+</html>

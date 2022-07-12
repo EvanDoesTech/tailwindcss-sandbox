@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Containers and Flex Utilities</title>
+  </head>
+  <body>
+    <!-- Container Breakpoints -->
+    <!-- Docs: https://tailwindcss.com/docs/container -->
+    <!--
+        none: 100%
+        sm: 640px
+        md: 768px
+        lg: 1024px
+        xl: 1280px
+        2xl: 1536px
+    -->
+    <!-- Containers-->
+    <!-- Docs: https://tailwindcss.com/docs/container -->
+    <div class="container mx-auto">
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum harum quisquam earum recusandae vitae nihil, reprehenderit maxime ipsam distinctio beatae aspernatur provident explicabo quidem? Illum aut autem harum sed, labore perspiciatis animi veniam, pariatur consectetur minima, distinctio molestiae est. Dolor.</p>
+
+      <!-- Margin -->
+      <!-- Docs: https://tailwindcss.com/docs/margin -->
+      <div class="bg-purple-200">Test</div>
+      <div class="bg-purple-300 m-2">Test</div>
+      <div class="bg-purple-200 ml-4">Test</div>
+      <div class="bg-purple-300 mr-4">Test</div>
+      <div class="bg-purple-200 mt-4">Test</div>
+      <div class="bg-purple-300 mb-8">Test</div>
+
+      <div class="bg-blue-200 mx-4">Test</div>
+      <div class="bg-yellow-200 my-6">Test</div>
+
+
+      <!-- Padding -->
+      <!-- Docs: https://tailwindcss.com/docs/padding -->
+      <div class="bg-green-200 p-2">Test</div>
+      <div class="bg-green-300 pl-4">Test</div>
+      <div class="bg-green-200 pb-4">Test</div>
+
+      <div class="bg-green-300 px-4">Test</div>
+      <div class="bg-green-200 py-4">Test</div>
+
+
+      <!-- Space Between X Axis -->
+      <!-- Docs: https://tailwindcss.com/docs/space -->
+      <div class="flex my-12 bg-blue-100 space-x-8">
+        <div class="bg-blue-300 py-2 px-8">1</div>
+        <div class="bg-blue-300 py-2 px-8">2</div>
+        <div class="bg-blue-300 py-2 px-8">3</div>
+        <div class="bg-blue-300 py-2 px-8">4</div>
+      </div>
+
+
+      <!-- Space Between Y Axis -->
+      <!-- Docs: https://tailwindcss.com/docs/space -->
+      <div class="flex flex-col my-12 bg-yellow-100 space-y-7">
+        <div class="bg-yellow-300 py-2 px-8">1</div>
+        <div class="bg-yellow-300 py-2 px-8">2</div>
+        <div class="bg-yellow-300 py-2 px-8">3</div>
+        <div class="bg-yellow-300 py-2 px-8">4</div>
+      </div>
+
+      </div>
+    </div>
+  </body>
+</html>

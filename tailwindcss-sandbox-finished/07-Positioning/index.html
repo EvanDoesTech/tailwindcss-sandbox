@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Positioning</title>
+  </head>
+  <body>
+    <div class="space-y-2">
+      <!-- Positioning Example -->
+      <!-- Docs: https://tailwindcss.com/docs/position -->
+      <div class="bg-green-100 relative h-24 w-1/2">
+        Parent Element
+        <div class="bg-green-300 absolute bottom-0 right-0">Child Element</div>
+      </div>
+
+      <!-- Top left -->
+      <div class="relative h-48 w-48 bg-emerald-100">
+        <div class="absolute left-0 top-0 h-24 w-24 bg-emerald-300"></div>
+      </div>
+
+      <!-- Top right -->
+      <div class="relative h-48 w-48 bg-emerald-100">
+        <div class="absolute right-0 top-0 h-24 w-24 bg-emerald-300"></div>
+      </div>
+
+      <!-- Bottom right -->
+      <div class="relative h-48 w-48 bg-emerald-100">
+        <div class="absolute right-0 bottom-0 h-24 w-24 bg-emerald-300"></div>
+      </div>
+
+      <!-- Bottom left -->
+      <div class="relative h-48 w-48 bg-emerald-100">
+        <div class="absolute bottom-0 left-0 h-24 w-24 bg-emerald-300"></div>
+      </div>
+
+      <!-- Span top -->
+      <div class="relative h-48 w-48 bg-teal-100">
+        <div class="absolute inset-x-0 top-0 h-24 bg-teal-300"></div>
+      </div>
+
+      <!-- Span right -->
+      <div class="relative h-48 w-48 bg-teal-100">
+        <div class="absolute inset-y-0 right-0 w-24 bg-teal-300"></div>
+      </div>
+
+      <!-- Span bottom -->
+      <div class="relative h-48 w-48 bg-teal-100">
+        <div class="absolute inset-x-0 bottom-0 h-24 bg-teal-300"></div>
+      </div>
+
+      <!-- Span left -->
+      <div class="relative h-48 w-48 bg-teal-100">
+        <div class="absolute inset-y-0 left-0 w-24 bg-teal-300"></div>
+      </div>
+
+      <!-- Display Utilities -->
+      <!-- Docs: https://tailwindcss.com/docs/display -->
+      <div class="p-8 bg-sky-100 text-sky-800">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+        <span class="inline font-black"
+          >Ut, nisi, repellat numquam at sed officia odit tenetur cupiditate
+          quaerat commodi
+        </span>
+        asperiores? Aliquam dolorum facilis tenetur asperiores inventore. Optio
+        reprehenderit
+        <span class="inline-block font-black">repudiandae facere alias</span>
+        illum totam a error asperiores hic dolore, debitis molestias nesciunt ut
+        dolorem dignissimos
+        <span class="block font-black">et autem quis magnam, odio</span>
+        assumenda ducimus pariatur tempore, beatae laborum.
+        <span class="hidden">HIDE THIS PLEASE</span>
+        Enim itaque at consectetur autem ratione quas provident inventore, eos
+        dolorum, alias ipsa laudantium.
+      </div>
+
+      <!-- Z-Index -->
+      <!-- Docs: https://tailwindcss.com/docs/z-index -->
+      <div class="relative mx-12">
+        <div
+          class="absolute left-0 rounded-full h-24 w-24 bg-indigo-200 z-10"
+        ></div>
+        <div
+          class="absolute left-8 rounded-full h-24 w-24 bg-indigo-300 z-20"
+        ></div>
+        <div
+          class="absolute left-14 rounded-full h-24 w-24 bg-indigo-400 z-30"
+        ></div>
+        <div
+          class="absolute left-24 rounded-full h-24 w-24 bg-indigo-500 z-40"
+        ></div>
+        <div
+          class="absolute left-32 rounded-full h-24 w-24 bg-indigo-600 z-50"
+        ></div>
+      </div>
+    </div>
+  </body>
+</html>

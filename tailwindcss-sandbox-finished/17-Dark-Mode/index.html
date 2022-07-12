@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Dark Mode</title>
+    <script>
+      tailwind.config = {
+        darkMode: "class",
+      };
+    </script>
+  </head>
+  <!-- Dark Mode -->
+  <!-- Docs: https://tailwindcss.com/docs/dark-mode -->
+  <body class="p-8">
+    <div
+      class="p-7 bg-white mb-12 shadow-md rounded-lg dark:bg-slate-700 dark:shadow-none"
+    >
+      <h1 class="font-bold mb-2 dark:text-white">
+        Lorem ipsum dolor sit amet.
+      </h1>
+      <p class="dark:text-slate-300">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore,
+        velit. Aperiam possimus sint corrupti fugiat nulla fugit culpa ducimus.
+        Enim.
+      </p>
+    </div>
+
+    <input type="checkbox" id="toggle" name="toggle" />
+    <label for="toggle">Dark Mode</label>
+
+    <script>
+      document.getElementById("toggle").addEventListener("change", function () {
+        if (this.checked) {
+          document.documentElement.classList.add("dark");
+        } else {
+          document.documentElement.classList.remove("dark");
+        }
+      });
+    </script>
+  </body>
+</html>

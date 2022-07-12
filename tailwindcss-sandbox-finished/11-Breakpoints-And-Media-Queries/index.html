@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Breakpoints and Media Queries</title>
+  </head>
+  <body>
+    <!-- This script will display the current width of the browser -->
+    <script>
+      function displayBrowserWidth() {
+        const width = window.innerWidth;
+
+        document.querySelector("h1").innerText = `${width}px`;
+      }
+
+      window.onload = displayBrowserWidth;
+      window.onresize = displayBrowserWidth;
+    </script>
+
+    <h1
+      class="font-bold text-sm sm:text-lg md:text-2xl lg:text-3xl xl:text-4xl"
+    ></h1>
+
+    <!-- Breakpoint Utilities -->
+    <!-- Docs: https://tailwindcss.com/docs/responsive-design -->
+    <div
+      class="h-48 bg-blue-400 sm:bg-green-400 md:bg-yellow-400 lg:bg-orange-400 xl:bg-red-400"
+    ></div>
+    <div class="hidden sm:block lg:hidden">Hello World</div>
+  </body>
+</html>
